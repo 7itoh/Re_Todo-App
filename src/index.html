@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        fieldset {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Todo</h1>
+        </header>
+    </section>
+    <section>
+        <nav>
+            <fieldset>
+                <form action="" id="disp_radio_wrap">
+                    <label for="all">
+                        <input type="radio" name="disp_state" id="disp_all" value="all" checked>
+                        すべて</label>
+                    <label for="mainte">
+                        <input type="radio" name="disp_state" id="disp_mainte" value="mainte">
+                        作業中</label>
+                    <label for="comp">
+                        <input type="radio" name="disp_state" id="disp_comp" value="comp">
+                        完了</label>
+                </form>
+            </fieldset>
+        </nav>
+    </section>
+    <section>
+        <fieldset>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Task</th>
+                    <th>状態</th>
+                    <th></th>
+                </thead>
+                <tbody id="disp_todos">
+                </tbody>
+            </table>
+        </fieldset>
+    </section>
+    <br>
+    <br>
+    <section>
+        <fieldset>
+            <h3>Task追加</h3>
+            <input type="text" name="input_new_task_val" id="input_new_task_val" placeholder="新規タスクを入力してください">
+        </fieldset>
+    </section>
+    <br>
+    <section>
+        <button id="add_new_task_val">Task追加</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
